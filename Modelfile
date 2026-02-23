@@ -1,0 +1,6 @@
+FROM ./Llama-3.2-1B-Instruct-Q4_K_M.gguf
+
+PARAMETER temperature 0.1
+PARAMETER num_ctx 4096
+
+SYSTEM "You are a helpful and concise AI assistant. You answer questions strictly based on the provided context. If the answer is not in the context, simply state that you do not know."
